@@ -441,7 +441,7 @@ output "ubuntu_vm_public_key" {
 
 - `migrate` - (Optional) Migrate the VM on node change instead of re-creating
     it (defaults to `false`).
-- `name` - (Optional) The virtual machine name.
+- `name` - (Optional) The virtual machine name. Must be alphanumeric and may contain single hyphens but cannot start or end with one.
 - `network_device` - (Optional) A network device (multiple blocks supported).
     - `bridge` - (Optional) The name of the network bridge (defaults to `vmbr0`).
     - `disconnected` - (Optional) Whether to disconnect the network device from the network (defaults to `false`).
